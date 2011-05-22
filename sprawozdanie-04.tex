@@ -49,5 +49,38 @@ System aukcyjny koordynuje stany przedmiotów wystawionych na aukcjach oraz
 reaguje na akcje podejmowane przez pracowników i~klientów domu aukcyjnego.
 Dokument zawiera diagramy dotyczące co bardziej skomplikowanych przypadków.
 
+\subsection{Rejestracja użytkownika}
+
+Rejestracja klienta w~systemie jest wymagana, by mógł on skorzystać
+z~jakichkolwiek funkcji systemu. Schemat opisanych aktywności znajduje się na
+str.~\pageref{fig:aktywnosc-rejestracja-uzytkownika}.
+
+Obowiązkowe jest zaakceptowanie regulaminu. Po akceptacji, klient proszony jest
+o wypełnienie formularza z~danymi personalnymi. W~przypadku braku akceptacji
+proces rejestracji jest anulowany i kończony. Po uzupełnieniu formularza,
+następuje weryfikacja wprowadzonych danych. W przypadku niespełnienia dowolnego
+wymogu, pojawia się monit z~prośbą o poprawienie błędów.
+
+Po pomyślnym przejściu weryfikacji, następuje weryfikacja adresu email gdzie
+wysyłane są tymczasowe kody do aktywowania konta z ograniczeniami. Jednocześnie
+wysyłane są kurierem kody na adres domowy użytkownika. W przypadku nie
+wprowadzenia kodów dostarczonych przez kuriera konto jest aktywne ale ma
+ograniczenia, natomiast po wprowadzeniu kodów następuje pełna aktywacja konta.
+
+Rezygnacja jest możliwa do momentu weryfikacji adresu email. Po zweryfikowaniu,
+rezygnacja skutkuje anulowaniem procesu rejestracji i zakończeniem całego
+procesu rejestracji.
+
+\newpage
+\begin{figure}[p]
+  \begin{adjustwidth}{-3cm}{-3cm}
+    \centering
+    \includegraphics{figury/aktywnosc-rejestracja-uzytkownika}
+    \caption{Diagram aktywności procesu rejestracji użytkownika.}
+    \label{fig:aktywnosc_rejestracja_uzytkownika}
+  \end{adjustwidth}
+\end{figure}
+\clearpage
+
 \end{document}
 
