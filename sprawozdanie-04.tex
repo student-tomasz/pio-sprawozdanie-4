@@ -82,5 +82,33 @@ procesu rejestracji.
 \end{figure}
 \clearpage
 
+\subsection{Stany przedmiotu w~domu akcyjnym}
+
+Głównym zadaniem systemu jest zarządzanie przedmiotami, które na czas trwania
+aukcji są pod opieką domu aukcyjnego. Diagram obrazujący możliwe stany w~jakich
+przedmiot aukcji może się znaleźć jest na stronie \pageref{fig:stan_przedmiot}.
+
+Zanim właściciel wyśle przedmiot do magazynu domu aukcyjnego musi
+wypełnić specjalny formularz (dostępny na stronie) i przesłać go razem z
+paczką.
+
+Kurier odbiera od klienta paczkę i składa ją w magazynie. Przed przyjęciem
+zawartość paczki zostaje odpowiednio oznakowana i wprowadzona do systemu.
+
+Towar zostaje w magazynie dopóki nie zostanie zakupiony na aukcji lub gdy
+właściciel wycofa przedmiot. Po zakończonej aukcji paczka trafia do nabywcy, a
+w serwisie powstaje nowy wpis na ten temat.
+
+\newpage
+\begin{figure}[p]
+  \begin{adjustwidth}{-3cm}{-3cm}
+    \centering
+    \includegraphics{figury/stan-przedmiot}
+    \caption{Diagram stanów dla cyklu życia przedmiotu w~systemie aukcyjnym.}
+    \label{fig:stan_przedmiot}
+  \end{adjustwidth}
+\end{figure}
+\clearpage
+
 \end{document}
 
