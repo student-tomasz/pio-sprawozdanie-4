@@ -99,8 +99,7 @@ Towar zostaje w magazynie dopóki nie zostanie zakupiony na aukcji lub gdy
 właściciel wycofa przedmiot. Po zakończonej aukcji paczka trafia do nabywcy, a
 w serwisie powstaje nowy wpis na ten temat.
 
-\newpage
-\begin{figure}[p]
+\begin{figure}[hb]
   \begin{adjustwidth}{-3cm}{-3cm}
     \centering
     \includegraphics{figury/stan-przedmiot}
@@ -126,6 +125,28 @@ nie może oczywiście rozpocząć aukcji.
     \includegraphics{figury/aktywnosc-nowa-aukcja}
     \caption{Schemat aktywności dla tworzenia nowej aukcji.}
     \label{fig:aktywnosc_nowa_aukcja}
+  \end{adjustwidth}
+\end{figure}
+\clearpage
+
+\subsection{Wystawianie przedmiotu na aukcji}
+
+Pierwszym etapem wystawiania aukcji, jest zgłoszenie formularza aukcyjnego.
+Następnie po otrzymaniu potwierdzenia przyjęcia formularza, klient proszony
+jest o wysłanie produktu. Gdy produkt znajdzie się w magazynach, rozpoczyna się
+proces tworzenia strony aukcyjnej. Po zaakceptowaniu strony przez admina,
+strona zostaje uruchomiona w odpowiednim terminie/po aktualizacji serwera.
+
+Schemat stanu dla wystawianego przedmiotu znajduje się na stronie
+\pageref{fig:stan_wystaw_przedmiot}.
+
+\newpage
+\begin{figure}[hb]
+  \begin{adjustwidth}{-3cm}{-3cm}
+    \centering
+    \includegraphics{figury/stan-wystaw-przedmiot}
+    \caption{Schemat stanów dla wystawianych przedmiotów.}
+    \label{fig:stan_wystaw_przedmiot}
   \end{adjustwidth}
 \end{figure}
 \clearpage
